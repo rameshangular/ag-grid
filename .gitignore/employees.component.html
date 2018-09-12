@@ -1,0 +1,23 @@
+<!-- AG Grid -->
+<div class="col-md-8 col-xs-8">
+    <ag-grid-angular 
+    style="width: 500px; height: 500px;" 
+    class="ag-theme-balham"
+    [enableSorting]="true"
+    [enableFilter]="true"
+    [rowData]="rowData" 
+    rowSelection="multiple"
+    (gridReady)="OnGridReady($event)"
+    [columnDefs]="columnDefs"
+    >
+    </ag-grid-angular>
+</div>
+<div class="col-md-4 col-xs-4">
+    <button class="btn btn-success" type="button" (click)="getSelectedRows()">Get Selected Rows</button>
+</div>
+
+<div #primaryColorSample>
+    <p>Test </p>
+</div>
+
+<!-- AG Grid -->
